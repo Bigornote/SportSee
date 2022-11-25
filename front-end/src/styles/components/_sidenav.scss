@@ -1,0 +1,38 @@
+.sidenav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  background-color: $black;
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+      border-radius: 5px;
+      width: 62px;
+      height: 62px;
+      margin-bottom: 20px;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
+  p {
+    position: absolute;
+    bottom: 130px;
+    width: max-content;
+    transform: rotate(270deg);
+    color: $white;
+  }
+}
