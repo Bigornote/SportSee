@@ -36,13 +36,8 @@ a {
 
 .container {
   position: relative;
-  margin: auto 20px;
-}
-
-@media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1240px;
-    width: 100%;
-    margin: auto;
-  }
+  width: calc(100vw - 120px);
+  height: calc(100vh - 90px);
+  margin-left: 120px;
+  padding: 70px 90px 85px 107px;
 }

@@ -12,6 +12,7 @@ Vous travaillez en tant que développeur chez SportSee, une startup dédiée au 
 - React & React-dom (versions 18.2.0)
 - React-icons (versions 4.6.0)
 - Sass (versions 1.56.1)
+- Js Doc (versions 4.0.0)
 
 Utiliser Visual Studio Code est recommendé pour réaliser l'installation et le chargement du projet.
 

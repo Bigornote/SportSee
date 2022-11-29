@@ -2,6 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/logo.svg";
 
+/**
+ * Returns a React component displays the navigation
+ * @returns a React Components
+ */
+
 const Navbar = () => {
   return (
     <header className="header">

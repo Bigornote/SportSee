@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = () => {
   return (
-    <main>
+    <main className="container">
       <h1>Bienvenue sur SportSee</h1>
       <p>Une application mobile dédiée au coaching sportif</p>
 
