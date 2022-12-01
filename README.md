@@ -1,7 +1,7 @@
 # SportSee : Développez un tableau de bord d'analytics avec React
 
 <p align="center">
-  <img src="./front-end/src/assets/logo.svg">
+  <img src="./front-end/src/assets/logo.svg" width="500px">
 </p>
 
 Vous travaillez en tant que développeur chez SportSee, une startup dédiée au coaching sportif. En pleine croissance, l’entreprise va aujourd’hui lancer une nouvelle version de la page profil de l’utilisateur. Cette page va notamment permettre à l’utilisateur de suivre le nombre de sessions réalisées ainsi que le nombre de calories brûlées.
@@ -12,6 +12,8 @@ Vous travaillez en tant que développeur chez SportSee, une startup dédiée au 
 - React & React-dom (versions 18.2.0)
 - React-icons (versions 4.6.0)
 - Sass (versions 1.56.1)
+- Axios (versions 1.1.3)
+- Recharts (versions 2.1.16)
 - Js Doc (versions 4.0.0)
 
 Utiliser Visual Studio Code est recommendé pour réaliser l'installation et le chargement du projet.
