@@ -1,0 +1,11 @@
+.dashboard {
+  .charts {
+    max-width: 835px;
+  }
+  .keydata {
+    width: 33%;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+  }
+}

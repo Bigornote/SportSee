@@ -3,8 +3,17 @@
 //PAGES
 
 @import "./pages/home";
+@import "./pages/dashboard";
+@import "./pages/error";
 
 //COMPONENTS
 @import "./components/sidenav";
 @import "./components/navbar";
 @import "./components/card";
+@import "./components/welcomeuser";
+
+//COMPONENTS CHARTS
+@import "./components/charts/activitychart";
+@import "./components/charts/averagesessionchart";
+@import "./components/charts/performancechart";
+@import "./components/charts/resultchart";
