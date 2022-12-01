@@ -1,11 +1,16 @@
 .dashboard {
-  .charts {
-    max-width: 835px;
-  }
-  .keydata {
-    width: 33%;
+  .statistique {
     display: flex;
-    gap: 40px;
-    flex-direction: column;
+    gap: 30px;
+    margin-top: 70px;
+    .charts {
+      max-width: 835px;
+    }
+    .keydata {
+      width: 33%;
+      display: flex;
+      gap: 40px;
+      flex-direction: column;
+    }
   }
 }

@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getData } from "../data/services/getdata";
+// Components
 import Error from "./Error";
 import WelcomeUser from "../components/WelcomeUser";
 import Card from "../components/Card";
-// Icon
+// Charts
+import ActivityChart from "../components/Charts/ActivityChart";
+// Icons
 import iconCalories from "../assets/icons-nutrition/calories.svg";
 import iconGlucides from "../assets/icons-nutrition/glucides.svg";
 import iconLipides from "../assets/icons-nutrition/lipides.svg";
@@ -29,7 +32,9 @@ const Dashboard = () => {
     <main className="container dashboard">
       <WelcomeUser name={data.userInfos.firstName} />
       <section className="statistique">
-        <div className="charts"></div>
+        <div className="charts">
+          <ActivityChart />
+        </div>
         <div className="keydata">
           <Card
             icon={iconCalories}

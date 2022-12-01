@@ -19,7 +19,7 @@ export const getInfos = async (id) => {
 
 export const getActivity = async (id) => {
   try {
-    const res = await api.get(`http://localhost:3001/user/${id}/activity`);
+    const res = await api.get(`http://localhost:3000/user/${id}/activity`);
     return res.data;
   } catch (err) {
     console.log(err);
