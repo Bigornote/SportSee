@@ -35,10 +35,8 @@ a {
 
 .container {
   position: relative;
-  width: calc(100vw - 120px);
-  height: calc(100vh - 90px);
   margin-left: 120px;
-  padding: 70px 90px 85px 107px;
+  padding: 60px 0 0 100px;
   color: $black;
 
   a {
@@ -47,5 +45,11 @@ a {
 
   span {
     color: $color-primary;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .container {
+    padding: 50px 0 0 50px;
   }
 }

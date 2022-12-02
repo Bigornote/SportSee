@@ -59,31 +59,43 @@ const AverageSessionChart = () => {
   return (
     <div className="chart-session">
       <div>
-        <h2 className="title">Durée moyenne des sessions</h2>
+        <h2 className="title">
+          Durée moyenne des <br></br>sessions
+        </h2>
       </div>
       <ResponsiveContainer width="100%" height="100%">
-        <LineChart data={data}>
+        <LineChart
+          data={data}
+          margin={{ top: 0, left: 15, right: 15, bottom: 10 }}
+        >
           <XAxis
-            type="category"
             dataKey="day"
-            tickLine={true}
-            stroke="red"
-            padding={{ right: 5, left: 5 }}
-            tick={{ fontSize: 13, stroke: "white", opacity: 0.8 }}
+            stroke="#ffffff"
+            tickLine={false}
+            axisLine={false}
+            tick={{
+              fontSize: 12,
+              fontWeight: 500,
+            }}
           />
-          <YAxis
-            dataKey="sessionLength"
-            domain={[0, "dataMax + 30"]}
-            hide={true}
+          <YAxis hide={true} domain={[0, "dataMax + 30"]} />
+          <Tooltip
+            content={<CustomTooltipAverageSession />}
+            wrapperStyle={{ outline: "none" }}
+            cursor={{
+              stroke: "#000",
+              strokeOpacity: 0.1,
+              strokeWidth: 40,
+            }}
           />
-          <Tooltip content={CustomTooltipAverageSession} />
           <Line
             type="monotone"
             dataKey="sessionLength"
-            stroke="rgba(255, 255, 255, 0.7)"
+            unit="min"
+            stroke="#ffffff"
             strokeWidth={2}
             dot={false}
-            activeDot={{ r: 4, strokeWidth: 4, stroke: "white" }}
+            activeDot={{ r: 6 }}
           />
         </LineChart>
       </ResponsiveContainer>

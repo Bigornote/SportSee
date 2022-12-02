@@ -2,7 +2,7 @@
   .statistique {
     display: flex;
     gap: 30px;
-    margin-top: 70px;
+    margin-top: 40px;
 
     .charts {
       display: flex;
@@ -19,6 +19,22 @@
       display: flex;
       gap: 40px;
       flex-direction: column;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .dashboard {
+    .statistique {
+      flex-direction: column;
+
+      .keydata {
+        max-width: 835px;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 27px;
+      }
     }
   }
 }
