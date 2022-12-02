@@ -2,7 +2,7 @@ const USER_MAIN_DATA = [
   {
     id: 12,
     userInfos: {
-      firstName: "Karl",
+      firstName: "Karlos",
       lastName: "Dovineau",
       age: 31,
     },
@@ -260,38 +260,40 @@ const USER_PERFORMANCE = [
   },
 ];
 
-export const getInfos = async (id) => {
-  try {
-    const res = USER_MAIN_DATA.find((el) => el.id == id);
-    return { data: res };
-  } catch (err) {
-    console.log(err);
-  }
-};
+export default class MockData {
+  static getInfos = async (id) => {
+    try {
+      const res = USER_MAIN_DATA.find((el) => el.id == id);
+      return { data: res };
+    } catch (err) {
+      console.log(err);
+    }
+  };
 
-export const getActivity = async (id) => {
-  try {
-    const res = USER_ACTIVITY.find((el) => el.userId == id);
-    return { data: res };
-  } catch (err) {
-    console.log(err);
-  }
-};
+  static getActivity = async (id) => {
+    try {
+      const res = USER_ACTIVITY.find((el) => el.userId == id);
+      return { data: res };
+    } catch (err) {
+      console.log(err);
+    }
+  };
 
-export const getPerformance = async (id) => {
-  try {
-    const res = USER_PERFORMANCE.find((el) => el.userId == id);
-    return { data: res };
-  } catch (err) {
-    console.log(err);
-  }
-};
+  static getPerformance = async (id) => {
+    try {
+      const res = USER_PERFORMANCE.find((el) => el.userId == id);
+      return { data: res };
+    } catch (err) {
+      console.log(err);
+    }
+  };
 
-export const getAverageSessions = async (id) => {
-  try {
-    const res = USER_AVERAGE_SESSIONS.find((el) => el.userId == id);
-    return { data: res };
-  } catch (err) {
-    console.log(err);
-  }
-};
+  static getAverageSessions = async (id) => {
+    try {
+      const res = USER_AVERAGE_SESSIONS.find((el) => el.userId == id);
+      return { data: res };
+    } catch (err) {
+      console.log(err);
+    }
+  };
+}

@@ -7,12 +7,14 @@ import WelcomeUser from "../components/WelcomeUser";
 import Card from "../components/Card";
 // Charts
 import ActivityChart from "../components/Charts/ActivityChart";
+import AverageSessionChart from "../components/Charts/AverageSessionChart";
+import PerformanceChart from "../components/Charts/PerformanceChart";
+import ResultChart from "../components/Charts/ResultChart";
 // Icons
 import iconCalories from "../assets/icons-nutrition/calories.svg";
 import iconGlucides from "../assets/icons-nutrition/glucides.svg";
 import iconLipides from "../assets/icons-nutrition/lipides.svg";
 import iconProteines from "../assets/icons-nutrition/proteines.svg";
-import ResultChart from "../components/Charts/ResultChart";
 
 const Dashboard = () => {
   const { id } = useParams();
@@ -36,6 +38,8 @@ const Dashboard = () => {
         <div className="charts">
           <ActivityChart />
           <div className="bottom-charts">
+            <AverageSessionChart />
+            <PerformanceChart />
             <ResultChart data={data.todayScore || data.score} />
           </div>
         </div>

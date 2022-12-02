@@ -1,32 +1,26 @@
-import {
-  getInfos,
-  getActivity,
-  getPerformance,
-  getAverageSessions,
-} from "../callapi";
+import CallApi from "../callapi";
+import MockData from "../mockdata";
 
-// import {
-//   getInfos,
-//   getActivity,
-//   getPerformance,
-//   getAverageSessions,
-// } from "../mockdata";
+let shouldUseMock = true;
+
+const exportedAPI = shouldUseMock ? MockData : CallApi;
+export default exportedAPI;
 
 export const getData = async (type, id) => {
   let data = [];
 
   switch (type) {
     case "USER_MAIN_DATA":
-      data = await getInfos(id);
+      data = await exportedAPI.getInfos(id);
       break;
     case "USER_ACTIVITY":
-      data = await getActivity(id);
+      data = await exportedAPI.getActivity(id);
       break;
     case "USER_PERFORMANCE":
-      data = await getPerformance(id);
+      data = await exportedAPI.getPerformance(id);
       break;
     case "USER_AVERAGE_SESSIONS":
-      data = await getAverageSessions(id);
+      data = await exportedAPI.getAverageSessions(id);
       break;
   }
   return data;

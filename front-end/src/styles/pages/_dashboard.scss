@@ -3,8 +3,16 @@
     display: flex;
     gap: 30px;
     margin-top: 70px;
+
     .charts {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
       max-width: 835px;
+    }
+    .bottom-charts {
+      display: flex;
+      gap: 30px;
     }
     .keydata {
       width: 33%;
