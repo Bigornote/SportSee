@@ -12,6 +12,7 @@ import iconCalories from "../assets/icons-nutrition/calories.svg";
 import iconGlucides from "../assets/icons-nutrition/glucides.svg";
 import iconLipides from "../assets/icons-nutrition/lipides.svg";
 import iconProteines from "../assets/icons-nutrition/proteines.svg";
+import ResultChart from "../components/Charts/ResultChart";
 
 const Dashboard = () => {
   const { id } = useParams();
@@ -34,6 +35,9 @@ const Dashboard = () => {
       <section className="statistique">
         <div className="charts">
           <ActivityChart />
+          <div className="bottom-charts">
+            <ResultChart data={data.todayScore || data.score} />
+          </div>
         </div>
         <div className="keydata">
           <Card

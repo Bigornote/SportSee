@@ -1,0 +1,29 @@
+.chart-result {
+  position: relative;
+  width: 253px;
+  height: 263px;
+  background-color: #fbfbfb;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.02);
+  border-radius: 5px;
+
+  .title {
+    font-size: 12px;
+    color: #20253a;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+  }
+  .score {
+    text-align: center;
+    width: 60px;
+    white-space: normal;
+    font-size: 13px;
+    color: #74798c;
+    background-color: #ffffff;
+    padding: 20%;
+    border-radius: 50%;
+    position: absolute;
+    top: 19%;
+    left: 19%;
+  }
+}
