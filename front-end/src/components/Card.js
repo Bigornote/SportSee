@@ -1,5 +1,10 @@
 import React from "react";
 
+/**
+ * Returns a React component displays Card on Home and Dashboard
+ * @param {string} for the params of info, unit and text
+ * @returns a React Components
+ */
 const Card = ({ icon, info, unit, text }) => {
   return (
     <div className="card">

@@ -3,8 +3,16 @@ import MockData from "../mockdata";
 
 let shouldUseMock = true;
 
+// Variable of env
 const exportedAPI = shouldUseMock ? MockData : CallApi;
 export default exportedAPI;
+
+/**
+ *
+ * @param {string} type
+ * @param {number} id
+ * @returns An Array in variable data
+ */
 
 export const getData = async (type, id) => {
   let data = [];

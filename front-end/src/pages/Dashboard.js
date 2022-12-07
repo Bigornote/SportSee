@@ -16,6 +16,12 @@ import iconGlucides from "../assets/icons-nutrition/glucides.svg";
 import iconLipides from "../assets/icons-nutrition/lipides.svg";
 import iconProteines from "../assets/icons-nutrition/proteines.svg";
 
+/**
+ * Returns a React component displays the Dashboard of the user
+ * @params {number} id to useParams() methode
+ * @returns a React Components
+ */
+
 const Dashboard = () => {
   const { id } = useParams();
   const [data, setData] = useState([]);

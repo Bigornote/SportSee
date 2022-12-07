@@ -9,6 +9,12 @@ import {
 } from "recharts";
 import { getData } from "../../data/services/getdata";
 
+/**
+ * Returns React Component that displays a Perfomance Chart.
+ * Fetch Data "USER_PERFORMANCE"
+ * @params {number} id to useParams() methode
+ * @returns A React component
+ */
 const PerformanceChart = () => {
   const { id } = useParams();
   const [data, setData] = useState([]);

@@ -8,6 +8,12 @@ const api = axios.create({
   baseURL: `http://localhost:3000`,
 });
 
+/**
+ * Class CallApi to collect data
+ * @param {number} id
+ * @returns {object} res
+ */
+
 export default class CallApi {
   static getInfos = async (id) => {
     try {

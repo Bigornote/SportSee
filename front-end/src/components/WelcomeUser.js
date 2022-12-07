@@ -1,5 +1,10 @@
 import React from "react";
 
+/**
+ * Returns a React component displays the message on top dashboard
+ * @param {string}
+ * @returns a React Components
+ */
 const WelcomeUser = ({ name }) => {
   return (
     <section className="welcome">

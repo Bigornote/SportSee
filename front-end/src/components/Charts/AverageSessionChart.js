@@ -10,6 +10,13 @@ import {
 } from "recharts";
 import { getData } from "../../data/services/getdata";
 
+/**
+ * Returns React Component that displays a Average Session Chart.
+ * Fetch Data "USER_AVERAGE_SESSIONS"
+ * @params {number} id to useParams() methode
+ * @returns A React component
+ */
+
 const AverageSessionChart = () => {
   const { id } = useParams();
   const [data, setData] = useState([]);

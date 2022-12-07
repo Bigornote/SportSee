@@ -6,6 +6,11 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
+/**
+ * Returns React Component that displays a Result Chart
+ * @param {data} in Dashboard
+ * @returns A React component
+ */
 const ResultChart = ({ data }) => {
   const result = data * 100;
 

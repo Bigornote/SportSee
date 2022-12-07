@@ -12,6 +12,13 @@ import {
   Bar,
 } from "recharts";
 
+/**
+ * Returns React Component that displays a Activity Chart.
+ * Fetch Data "USER_ACTIVITY"
+ * @params {number} id to useParams() methode
+ * @returns A React component
+ */
+
 const ActivityChart = () => {
   const { id } = useParams();
   const [data, setData] = useState([]);
