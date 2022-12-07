@@ -18,7 +18,8 @@ const ResultChart = ({ data }) => {
       </div>
       <div className="score">
         <p>
-          {result}%<span> de votre objectif</span>
+          {result}%<br></br>
+          <span> de votre objectif</span>
         </p>
       </div>
 
@@ -31,7 +32,7 @@ const ResultChart = ({ data }) => {
           barSize={10}
         >
           <PolarAngleAxis type="number" domain={[0, 100]} tick={false} />
-          <RadialBar dataKey="value" cornerRadius="50%" />
+          <RadialBar dataKey="value" cornerRadius="100%" />
         </RadialBarChart>
       </ResponsiveContainer>
     </div>
