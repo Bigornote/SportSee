@@ -21,7 +21,7 @@ const PerformanceChart = () => {
 
   useEffect(() => {
     const data = async () => {
-      const request = await getData("USER_PERFORMANCE", id);
+      const request = await getData("USER_PERFORMANCE", parseInt(id));
       if (!request) return alert("Error Perfomance Chart");
       const kindData = request.data.data.map((data) => {
         switch (data.kind) {

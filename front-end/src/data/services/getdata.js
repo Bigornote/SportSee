@@ -1,10 +1,10 @@
 import CallApi from "../callapi";
 import MockData from "../mockdata";
 
-let shouldUseMock = true;
+let shouldUseDataAPI = process.env.REACT_APP_SHOULD_USE_API;
 
 // Variable of env
-const exportedAPI = shouldUseMock ? MockData : CallApi;
+const exportedAPI = shouldUseDataAPI == "true" ? CallApi : MockData;
 export default exportedAPI;
 
 /**
@@ -13,7 +13,6 @@ export default exportedAPI;
  * @param {number} id
  * @returns An Array in variable data
  */
-
 export const getData = async (type, id) => {
   let data = [];
 

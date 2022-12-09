@@ -267,38 +267,22 @@ const USER_PERFORMANCE = [
  */
 export default class MockData {
   static getInfos = async (id) => {
-    try {
-      const res = USER_MAIN_DATA.find((el) => el.id === id);
-      return { data: res };
-    } catch (err) {
-      console.log(err);
-    }
+    const res = USER_MAIN_DATA.find((el) => el.id === parseInt(id));
+    return { data: res };
   };
 
   static getActivity = async (id) => {
-    try {
-      const res = USER_ACTIVITY.find((el) => el.userId === id);
-      return { data: res };
-    } catch (err) {
-      console.log(err);
-    }
+    const res = USER_ACTIVITY.find((el) => el.userId === parseInt(id));
+    return { data: res };
   };
 
   static getPerformance = async (id) => {
-    try {
-      const res = USER_PERFORMANCE.find((el) => el.userId === id);
-      return { data: res };
-    } catch (err) {
-      console.log(err);
-    }
+    const res = USER_PERFORMANCE.find((el) => el.userId === parseInt(id));
+    return { data: res };
   };
 
   static getAverageSessions = async (id) => {
-    try {
-      const res = USER_AVERAGE_SESSIONS.find((el) => el.userId === id);
-      return { data: res };
-    } catch (err) {
-      console.log(err);
-    }
+    const res = USER_AVERAGE_SESSIONS.find((el) => el.userId === parseInt(id));
+    return { data: res };
   };
 }

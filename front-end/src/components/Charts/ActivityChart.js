@@ -25,7 +25,7 @@ const ActivityChart = () => {
 
   useEffect(() => {
     const data = async () => {
-      const request = await getData("USER_ACTIVITY", id);
+      const request = await getData("USER_ACTIVITY", parseInt(id));
       if (!request) return alert("Error Chart Activity");
       setData(request.data.sessions);
     };

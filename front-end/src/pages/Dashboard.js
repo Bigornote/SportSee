@@ -28,18 +28,16 @@ const Dashboard = () => {
 
   useEffect(() => {
     const data = async () => {
-      const request = await getData("USER_MAIN_DATA", id);
+      const request = await getData("USER_MAIN_DATA", parseInt(id));
       if (!request) return <Error />;
       setData(request.data);
     };
     data();
   }, [id]);
 
-  if (data.length === 0) return <Error />;
-
   return (
     <main className="container dashboard">
-      <WelcomeUser name={data.userInfos.firstName} />
+      <WelcomeUser name={data.userInfos?.firstName} />
       <section className="statistique">
         <div className="charts">
           <ActivityChart />
@@ -52,25 +50,25 @@ const Dashboard = () => {
         <div className="keydata">
           <Card
             icon={iconCalories}
-            info={data.keyData.calorieCount}
+            info={data.keyData?.calorieCount}
             unit="kCal"
             text="Calories"
           />
           <Card
             icon={iconProteines}
-            info={data.keyData.proteinCount}
+            info={data.keyData?.proteinCount}
             unit="g"
             text="Proteines"
           />
           <Card
             icon={iconGlucides}
-            info={data.keyData.carbohydrateCount}
+            info={data.keyData?.carbohydrateCount}
             unit="g"
             text="Glucides"
           />
           <Card
             icon={iconLipides}
-            info={data.keyData.lipidCount}
+            info={data.keyData?.lipidCount}
             unit="g"
             text="Lipides"
           />
