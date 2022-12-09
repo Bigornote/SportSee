@@ -9,12 +9,13 @@ Vous travaillez en tant que développeur chez SportSee, une startup dédiée au 
 ## Prérequis nécéssaires :
 
 - NodeJS (version 16.14.2)
-- React & React-dom (versions 18.2.0)
-- React-icons (versions 4.6.0)
-- Sass (versions 1.56.1)
-- Axios (versions 1.1.3)
-- Recharts (versions 2.1.16)
-- Js Doc (versions 4.0.0)
+- React & React-dom (version 18.2.0)
+- React-icons (version 4.6.0)
+- Sass (version 1.56.1)
+- Axios (version 1.1.3)
+- Recharts (version 2.1.16)
+- Js Doc (version 4.0.0)
+- Dotenv (version 16.0.3)
 
 Utiliser Visual Studio Code est recommendé pour réaliser l'installation et le chargement du projet.
 
