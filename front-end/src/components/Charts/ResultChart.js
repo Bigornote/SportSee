@@ -33,7 +33,7 @@ const ResultChart = ({ data }) => {
           data={score}
           innerRadius="70%"
           startAngle={90}
-          endAngle={450} // (360 + 90)
+          endAngle={450}
           barSize={10}
         >
           <PolarAngleAxis type="number" domain={[0, 100]} tick={false} />
