@@ -1,12 +1,12 @@
-# SportSee : Développez un tableau de bord d'analytics avec React
+# SportSee
 
 <p align="center">
   <img src="./front-end/src/assets/logo.svg" width="500px">
 </p>
 
-Vous travaillez en tant que développeur chez SportSee, une startup dédiée au coaching sportif. En pleine croissance, l’entreprise va aujourd’hui lancer une nouvelle version de la page profil de l’utilisateur. Cette page va notamment permettre à l’utilisateur de suivre le nombre de sessions réalisées ainsi que le nombre de calories brûlées.
+You work as a developer at SportSee, a startup dedicated to sports coaching. In full growth, the company will today launch a new version of the user profile page. This page will notably allow the user to follow the number of sessions carried out as well as the number of calories burned.
 
-## Prérequis nécéssaires :
+## Necessary prerequisites :
 
 - NodeJS (version 16.14.2)
 - React & React-dom (version 18.2.0)
@@ -16,24 +16,25 @@ Vous travaillez en tant que développeur chez SportSee, une startup dédiée au 
 - Recharts (version 2.1.16)
 - Js Doc (version 4.0.0)
 - Dotenv (version 16.0.3)
+- Prop-types (version 15.8.1)
 
-Utiliser Visual Studio Code est recommendé pour réaliser l'installation et le chargement du projet.
+Using Visual Studio Code is recommended to perform the installation and loading of the project.
 
 ## Installation :
 
-1. Clonez le projet sur votre ordinateur.
-2. Ouvrez le dossier contenant le dossier front-end et le dossier back-end avec Visual Studio Code.
-3. Utilisez votre terminal Visual Studio Code.
+1. Clone the project to your computer.
+2. Open the folder containing the front-end folder and the back-end folder with Visual Studio Code.
+3. Use your Visual Studio Code terminal.
 
 ### BACK-END :
 
-Accéder au dossier back-end
+Access the back-end folder
 
 ```
 cd ./back-end
 ```
 
-Installer les dépendances
+Install dependencies
 
 ```
 npm install
@@ -41,21 +42,21 @@ npm install
 
 ### FRONT-END :
 
-Accéder au dossier front-end
+Access the front-end folder
 
 ```
 cd ./front-end
 ```
 
-Installer les dépendances
+Install dependencies
 
 ```
 npm install
 ```
 
-## Chargement du projet :
+## Loading the project :
 
-Après que toute les dépendances soient correctements installées,
+After all dependencies are correctly installe
 
 ### BACK-END :
 
