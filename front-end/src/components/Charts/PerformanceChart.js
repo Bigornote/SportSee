@@ -8,6 +8,7 @@ import {
   Radar,
 } from "recharts";
 import { getData } from "../../data/services/getdata";
+import PropTypes from "prop-types";
 
 /**
  * Returns React Component that displays a Perfomance Chart.
@@ -69,6 +70,15 @@ const PerformanceChart = () => {
       </ResponsiveContainer>
     </div>
   );
+};
+
+PerformanceChart.propTypes = {
+  data: PropTypes?.arrayOf(
+    PropTypes.shape({
+      value: PropTypes.number.isRequired,
+      kind: PropTypes.number.isRequired,
+    })
+  ),
 };
 
 export default PerformanceChart;

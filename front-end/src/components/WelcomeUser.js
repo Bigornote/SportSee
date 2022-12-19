@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 /**
  * Returns a React component displays the message on top dashboard
@@ -17,3 +18,7 @@ const WelcomeUser = ({ name }) => {
 };
 
 export default WelcomeUser;
+
+WelcomeUser.propTypes = {
+  name: PropTypes.string,
+};

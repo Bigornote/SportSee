@@ -11,6 +11,7 @@ import {
   Tooltip,
   Bar,
 } from "recharts";
+import PropTypes from "prop-types";
 
 /**
  * Returns React Component that displays a Activity Chart.
@@ -112,6 +113,17 @@ const ActivityChart = () => {
       </ResponsiveContainer>
     </div>
   );
+};
+
+// La façon dont nous effectuons cette validation approfondie consiste à utiliser la shape()méthode de PropTypes. shape()prend un objet et valide les types à l'intérieur de l'objet.
+ActivityChart.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      day: PropTypes.string.isRequired,
+      kilogram: PropTypes.number.isRequired,
+      calories: PropTypes.number.isRequired,
+    })
+  ),
 };
 
 export default ActivityChart;

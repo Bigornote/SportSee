@@ -1,4 +1,4 @@
-import CallApi from "../callAPI";
+import CallApi from "../CallAPI";
 import MockData from "../mockdata";
 
 let shouldUseDataAPI = process.env.REACT_APP_SHOULD_USE_API;

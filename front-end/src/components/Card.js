@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 /**
  * Returns a React component displays Card on Home and Dashboard
@@ -18,6 +19,13 @@ const Card = ({ icon, info, unit, text }) => {
       </div>
     </div>
   );
+};
+
+Card.propTypes = {
+  icon: PropTypes.string,
+  info: PropTypes.number,
+  unit: PropTypes.string,
+  text: PropTypes.string,
 };
 
 export default Card;

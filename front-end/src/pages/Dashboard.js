@@ -29,7 +29,7 @@ const Dashboard = () => {
   useEffect(() => {
     const data = async () => {
       const request = await getData("USER_MAIN_DATA", parseInt(id));
-      if (!request) return <Error />;
+      if (!request) return alert("Accès à la requette API impossible");
       setData(request.data);
     };
     data();

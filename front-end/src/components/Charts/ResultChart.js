@@ -5,6 +5,7 @@ import {
   RadialBarChart,
   ResponsiveContainer,
 } from "recharts";
+import PropTypes from "prop-types";
 
 /**
  * Returns React Component that displays a Result Chart
@@ -42,6 +43,10 @@ const ResultChart = ({ data }) => {
       </ResponsiveContainer>
     </div>
   );
+};
+
+ResultChart.propTypes = {
+  data: PropTypes.number,
 };
 
 export default ResultChart;

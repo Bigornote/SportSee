@@ -9,6 +9,7 @@ import {
   YAxis,
 } from "recharts";
 import { getData } from "../../data/services/getdata";
+import PropTypes from "prop-types";
 
 /**
  * Returns React Component that displays a Average Session Chart.
@@ -50,7 +51,7 @@ const AverageSessionChart = () => {
     data();
   }, [id]);
 
-  if (data.length === 0) return null;
+  if (data.length == undefined) return null;
 
   const CustomTooltipAverageSession = ({ active, payload }) => {
     if (active && payload && payload.length) {
@@ -108,6 +109,15 @@ const AverageSessionChart = () => {
       </ResponsiveContainer>
     </div>
   );
+};
+
+AverageSessionChart.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      day: PropTypes.number.isRequired,
+      sessionLength: PropTypes.number.isRequired,
+    })
+  ),
 };
 
 export default AverageSessionChart;
